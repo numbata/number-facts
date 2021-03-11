@@ -41,10 +41,9 @@ RSpec.describe Number::Facts do
         .to include(type: :trivia, number: 35000, found: true, text: 'foo')
     end
 
-
     it 'raises error with invalid number' do
       expect { described_class.fetch('foo') }
-        .to raise_error
+        .to raise_error(StandardError)
     end
   end
 end

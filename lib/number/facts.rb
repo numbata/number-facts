@@ -7,8 +7,8 @@ module Number
     Error = Class.new(StandardError)
 
     class << self
-      def fetch(number = :random, **options)
-        {text: number, type: :trivia, number: number, found: true}
+      def fetch(number = :random, **_options)
+        { text: number, type: :trivia, number: number, found: true }
       end
     end
   end

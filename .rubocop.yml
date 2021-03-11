@@ -1,0 +1,49 @@
+require:
+  - rubocop-rspec
+  - rubocop-performance
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.7
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+    - '**/*.gemspec'
+    - '**/*.rake'
+
+Gemspec/RequiredRubyVersion:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/NumericLiterals:
+  Enabled: false
+Layout/LineLength:
+  Max: 120
+Layout/FirstArrayElementLineBreak:
+  Enabled: true
+Layout/FirstHashElementLineBreak:
+  Enabled: true
+Layout/FirstMethodArgumentLineBreak:
+  Enabled: true
+Layout/FirstMethodParameterLineBreak:
+  Enabled: true
+Layout/FirstParameterIndentation:
+  Enabled: true
+Layout/MultilineArrayBraceLayout:
+  Enabled: true
+  EnforcedStyle: new_line
+Layout/MultilineHashBraceLayout:
+  Enabled: true
+  EnforcedStyle: new_line
+Layout/MultilineMethodCallBraceLayout:
+  Enabled: true
+  EnforcedStyle: symmetrical
+Layout/MultilineMethodDefinitionBraceLayout:
+  Enabled: true
+  EnforcedStyle: symmetrical
+Layout/DotPosition:
+  Enabled: true
+  EnforcedStyle: leading
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
