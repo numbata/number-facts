@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://numbersapi.com/foo/trivia
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.3.0
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Thu, 11 Mar 2021 20:20:18 GMT
+      content-type:
+      - text/html; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      x-powered-by:
+      - Express
+      access-control-allow-origin:
+      - "*"
+      content-security-policy:
+      - default-src 'none'
+      x-content-type-options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="utf-8">
+        <title>Error</title>
+        </head>
+        <body>
+        <pre>Cannot GET /foo/trivia</pre>
+        </body>
+        </html>
+  recorded_at: Thu, 11 Mar 2021 20:18:50 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://numbersapi.com/random/trivia?max=10&min=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.3.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Thu, 11 Mar 2021 20:20:17 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '99'
+      connection:
+      - keep-alive
+      x-powered-by:
+      - Express
+      access-control-allow-origin:
+      - "*"
+      x-numbers-api-number:
+      - '7'
+      x-numbers-api-type:
+      - trivia
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache, no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+      expires:
+      - '0'
+      etag:
+      - W/"63-w8K/mFH+cCnigGa0JsrQ8ebHLUw"
+      last-modified:
+      - '1615494017'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+         "text": "7 is the figurative number of seas.",
+         "number": 7,
+         "found": true,
+         "type": "trivia"
+        }
+  recorded_at: Thu, 11 Mar 2021 20:18:49 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://numbersapi.com/42/math
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.3.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Thu, 11 Mar 2021 20:20:18 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '185'
+      connection:
+      - keep-alive
+      x-powered-by:
+      - Express
+      access-control-allow-origin:
+      - "*"
+      x-numbers-api-number:
+      - '42'
+      x-numbers-api-type:
+      - math
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache, no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+      expires:
+      - '0'
+      etag:
+      - W/"b9-IWZp3mkw1JKqC4m69UDeENdDdD0"
+      last-modified:
+      - '1615494018'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+         "text": "42 is conjectured to be the scaling factor in the leading order term of the \"sixth moment of the Riemann zeta function\".",
+         "number": 42,
+         "found": true,
+         "type": "math"
+        }
+  recorded_at: Thu, 11 Mar 2021 20:18:49 GMT
+recorded_with: VCR 6.0.0

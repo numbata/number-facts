@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://numbersapi.com/35353/trivia?notfound=floor
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.3.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Thu, 11 Mar 2021 20:20:18 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '117'
+      connection:
+      - keep-alive
+      x-powered-by:
+      - Express
+      access-control-allow-origin:
+      - "*"
+      x-numbers-api-number:
+      - '35000'
+      x-numbers-api-type:
+      - trivia
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache, no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+      expires:
+      - '0'
+      etag:
+      - W/"75-+2VUktLk0t4kyrpB9HnMmaySSqM"
+      last-modified:
+      - '1615494018'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+         "text": "35000 is the number of genes in a human being.",
+         "number": "35000",
+         "found": false,
+         "type": "trivia"
+        }
+  recorded_at: Thu, 11 Mar 2021 20:18:50 GMT
+recorded_with: VCR 6.0.0

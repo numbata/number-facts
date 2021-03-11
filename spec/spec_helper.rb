@@ -3,11 +3,22 @@
 require 'bundler/setup'
 require 'number/facts'
 
-RSpec.configure do |config|
-  # Enable flags like --only-failures and --next-failure
-  config.example_status_persistence_file_path = '.rspec_status'
+require 'vcr'
 
-  # Disable RSpec exposing methods globally on `Module` and `main`
+VCR.configure do |config|
+  config.cassette_library_dir = 'spec/cassettes'
+  config.hook_into :faraday
+  config.configure_rspec_metadata!
+  config.allow_http_connections_when_no_cassette = true
+  default_options = {
+    match_requests_on: %i[method path body]
+  }
+  default_options[:record] = :all if ENV['VCR_UP']
+  config.default_cassette_options = default_options
+end
+
+RSpec.configure do |config|
+  config.example_status_persistence_file_path = '.rspec_status'
   config.disable_monkey_patching!
 
   config.expect_with :rspec do |c|

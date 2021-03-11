@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Number::Facts do
+RSpec.describe Number::Facts, :vcr do
   it 'has a version number' do
     expect(described_class::VERSION).not_to be nil
   end
