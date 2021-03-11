@@ -4,7 +4,12 @@ require 'number/facts/version'
 
 module Number
   module Facts
-    class Error < StandardError; end
-    # Your code goes here...
+    Error = Class.new(StandardError)
+
+    class << self
+      def fetch(number = :random, **options)
+        {text: number, type: :trivia, number: number, found: true}
+      end
+    end
   end
 end
