@@ -1,0 +1,39 @@
+name: Number Facts Client CI
+
+on:
+  [push]
+
+jobs:
+  lint:
+    name: Linting code
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby 2.7.2
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7.2
+        bundler-cache: true
+    - name: Install dependencies
+      run: bundle install
+    - name: Run rubocop
+      run: bundle exec rubocop -D
+
+  test:
+    name: Testing code
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version: [2.7.0, 2.3.0, 3.0.0, head]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby ${{ matrix.ruby-ruby-version }}
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby-version }}
+        bundler-cache: true
+    - name: Install dependencies
+      run: bundle install
+    - name: Run tests
+      run: bundle exec rspec spec
+
