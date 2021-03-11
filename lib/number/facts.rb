@@ -9,7 +9,7 @@ module Number
 
     class << self
       def fetch(number = :random, **options)
-        client.request(options.merge(number: number))
+        client.request(**options.merge(number: number))
       end
 
       def client
