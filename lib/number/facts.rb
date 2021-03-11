@@ -12,6 +12,8 @@ module Number
         client.request(**options.merge(number: number))
       end
 
+      private
+
       def client
         @client ||= Client.new
       end

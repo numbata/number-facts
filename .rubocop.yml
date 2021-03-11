@@ -11,7 +11,8 @@ Metrics/BlockLength:
     - 'spec/**/*'
     - '**/*.gemspec'
     - '**/*.rake'
-
+RSpec/MultipleExpectations:
+  Enabled: false
 Gemspec/RequiredRubyVersion:
   Enabled: false
 Style/Documentation:

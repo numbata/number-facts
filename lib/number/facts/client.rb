@@ -1,11 +1,14 @@
 # frozen_string_literal: true
 
+require 'dry-monads'
 require 'faraday'
 require 'faraday_middleware'
 
 module Number
   module Facts
     class Client
+      include Dry::Monads[:result]
+
       API_ENDPOINT = 'http://numbersapi.com'
       TIMEOUT = 10
 
@@ -14,19 +17,21 @@ module Number
         response = connection.send(:get, endpoint_path, options)
 
         build_result(response)
-      rescue FaradayError => e
+      rescue ::FaradayError => e
         raise Number::Facts::Error, e
       end
 
       private
 
       def build_result(response)
-        return unless response.success?
+        return Failure(:fact_not_found) unless response.success?
 
         json = response.body
-        json
+        result = json
           .slice(:text, :found, :date, :year)
           .merge(type: json[:type].to_sym, number: json[:number].to_i)
+
+        Success(result)
       end
 
       def connection
