@@ -1,0 +1,113 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://numbersapi.com/2/29/date
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.3.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Thu, 11 Mar 2021 20:56:29 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '164'
+      connection:
+      - keep-alive
+      x-powered-by:
+      - Express
+      access-control-allow-origin:
+      - "*"
+      x-numbers-api-number:
+      - '60'
+      x-numbers-api-type:
+      - date
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache, no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+      expires:
+      - '0'
+      etag:
+      - W/"a4-oXz3/bBm5h7ApgBa2E16OkIEI0M"
+      last-modified:
+      - '1615496189'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+         "text": "February 29th is the day in 1940 that Finland initiates Winter War peace negotiations.",
+         "year": 1940,
+         "number": 60,
+         "found": true,
+         "type": "date"
+        }
+  recorded_at: Thu, 11 Mar 2021 20:55:01 GMT
+- request:
+    method: get
+    uri: http://numbersapi.com/1/15/date
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.3.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Thu, 11 Mar 2021 21:00:47 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '164'
+      connection:
+      - keep-alive
+      x-powered-by:
+      - Express
+      access-control-allow-origin:
+      - "*"
+      x-numbers-api-number:
+      - '15'
+      x-numbers-api-type:
+      - date
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache, no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+      expires:
+      - '0'
+      etag:
+      - W/"a4-7L/r9nF94O28WixciC1Sw6Jqy9M"
+      last-modified:
+      - '1615496447'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+         "text": "January 15th is the day in 1892 that James Naismith publishes the rules of basketball.",
+         "year": 1892,
+         "number": 15,
+         "found": true,
+         "type": "date"
+        }
+  recorded_at: Thu, 11 Mar 2021 20:59:19 GMT
+recorded_with: VCR 6.0.0

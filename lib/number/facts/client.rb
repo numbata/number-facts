@@ -13,12 +13,21 @@ module Number
         endpoint_path = "#{number}/#{type}"
         response = connection.send(:get, endpoint_path, options)
 
-        response.body
+        build_result(response)
       rescue FaradayError => e
         raise Number::Facts::Error, e
       end
 
       private
+
+      def build_result(response)
+        return unless response.success?
+
+        json = response.body
+        json
+          .slice(:text, :found, :date, :year)
+          .merge(type: json[:type].to_sym, number: json[:number].to_i)
+      end
 
       def connection
         Faraday.new(url: API_ENDPOINT, request: { timeout: TIMEOUT }) do |f|

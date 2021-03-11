@@ -1,0 +1,112 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://numbersapi.com/2021/year
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.3.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Thu, 11 Mar 2021 21:02:10 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '168'
+      connection:
+      - keep-alive
+      x-powered-by:
+      - Express
+      access-control-allow-origin:
+      - "*"
+      x-numbers-api-number:
+      - '2021'
+      x-numbers-api-type:
+      - year
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache, no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+      expires:
+      - '0'
+      etag:
+      - W/"a8-RucEXW1AYB+1DGujnH+OnTV73gM"
+      last-modified:
+      - '1615496530'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+         "text": "2021 is the year that Costa Rica has pledged to become a completely carbon-neutral nation by this date.",
+         "number": 2021,
+         "found": true,
+         "type": "year"
+        }
+  recorded_at: Thu, 11 Mar 2021 21:00:42 GMT
+- request:
+    method: get
+    uri: http://numbersapi.com/2010/year
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.3.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Thu, 11 Mar 2021 21:08:05 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '205'
+      connection:
+      - keep-alive
+      x-powered-by:
+      - Express
+      access-control-allow-origin:
+      - "*"
+      x-numbers-api-number:
+      - '2010'
+      x-numbers-api-type:
+      - year
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache, no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+      expires:
+      - '0'
+      etag:
+      - W/"cd-LzBN0F+zen4XHZVfJm6yvm5FG0k"
+      last-modified:
+      - '1615496885'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+         "date": "June 9",
+         "text": "2010 is the year that Ethnic riots in Kyrgyzstan between Kyrgyz and Uzbeks results in the deaths of hundreds on June 9th.",
+         "number": 2010,
+         "found": true,
+         "type": "year"
+        }
+  recorded_at: Thu, 11 Mar 2021 21:06:37 GMT
+recorded_with: VCR 6.0.0
