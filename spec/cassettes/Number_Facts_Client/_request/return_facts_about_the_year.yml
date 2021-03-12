@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://numbersapi.com/2010/year
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.3.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Fri, 12 Mar 2021 06:50:50 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '229'
+      connection:
+      - keep-alive
+      x-powered-by:
+      - Express
+      access-control-allow-origin:
+      - "*"
+      x-numbers-api-number:
+      - '2010'
+      x-numbers-api-type:
+      - year
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache, no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+      expires:
+      - '0'
+      etag:
+      - W/"e5-U5lLNkqDUv+YkJC9nLovMK9xfmU"
+      last-modified:
+      - '1615531850'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogImRhdGUiOiAiQXByaWwgMTAiLAogInRleHQiOiAiMjAxMCBpcyB0aGUgeWVhciB0aGF0IHRoZSBQcmVzaWRlbnQgb2YgUG9sYW5kLCBMZWNoIEthY3p5xYRza2ksIGlzIGFtb25nIDk2IGtpbGxlZCB3aGVuIHRoZWlyIGFpcnBsYW5lIGNyYXNoZXMgaW4gd2VzdGVybiBSdXNzaWEgb24gQXByaWwgMTB0aC4iLAogIm51bWJlciI6IDIwMTAsCiAiZm91bmQiOiB0cnVlLAogInR5cGUiOiAieWVhciIKfQ==
+  recorded_at: Fri, 12 Mar 2021 06:49:22 GMT
+recorded_with: VCR 6.0.0

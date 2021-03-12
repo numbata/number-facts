@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://numbersapi.com/35353/trivia?default=foo
+    uri: http://numbersapi.com/42/trivia?fragment=true
     body:
       encoding: US-ASCII
       string: ''
@@ -19,11 +19,11 @@ http_interactions:
       server:
       - nginx/1.4.6 (Ubuntu)
       date:
-      - Thu, 11 Mar 2021 20:20:18 GMT
+      - Fri, 12 Mar 2021 06:50:49 GMT
       content-type:
       - application/json; charset=utf-8
       content-length:
-      - '72'
+      - '94'
       connection:
       - keep-alive
       x-powered-by:
@@ -31,7 +31,7 @@ http_interactions:
       access-control-allow-origin:
       - "*"
       x-numbers-api-number:
-      - '35353'
+      - '42'
       x-numbers-api-type:
       - trivia
       pragma:
@@ -41,17 +41,17 @@ http_interactions:
       expires:
       - '0'
       etag:
-      - W/"48-g6IkYStZuXdyfDSgNxEjSTS8WDM"
+      - W/"5e-T7/CPmvoS+r51ZUbmd9qLJmH/Uc"
       last-modified:
-      - '1615494018'
+      - '1615531849'
     body:
       encoding: UTF-8
       string: |-
         {
-         "text": "foo",
-         "number": 35353,
-         "found": false,
+         "text": "the number of laws of cricket",
+         "number": 42,
+         "found": true,
          "type": "trivia"
         }
-  recorded_at: Thu, 11 Mar 2021 20:18:50 GMT
+  recorded_at: Fri, 12 Mar 2021 06:49:20 GMT
 recorded_with: VCR 6.0.0

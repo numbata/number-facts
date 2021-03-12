@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://numbersapi.com/42/trivia
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.3.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Fri, 12 Mar 2021 06:50:48 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '171'
+      connection:
+      - keep-alive
+      x-powered-by:
+      - Express
+      access-control-allow-origin:
+      - "*"
+      x-numbers-api-number:
+      - '42'
+      x-numbers-api-type:
+      - trivia
+      pragma:
+      - no-cache
+      cache-control:
+      - no-cache, no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+      expires:
+      - '0'
+      etag:
+      - W/"ab-T3bQKMiHTHNSPfaV3a1cT0BZNrc"
+      last-modified:
+      - '1615531848'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+         "text": "42 is the sum of the codes of the letters in the words \"BIG BANG\" using the encoding A=1, B=2, C=3, etc.",
+         "number": 42,
+         "found": true,
+         "type": "trivia"
+        }
+  recorded_at: Fri, 12 Mar 2021 06:49:19 GMT
+recorded_with: VCR 6.0.0

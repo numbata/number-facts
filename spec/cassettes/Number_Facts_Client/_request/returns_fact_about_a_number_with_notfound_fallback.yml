@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://numbersapi.com/random/trivia
+    uri: http://numbersapi.com/35353/trivia?notfound=floor
     body:
       encoding: US-ASCII
       string: ''
@@ -19,11 +19,11 @@ http_interactions:
       server:
       - nginx/1.4.6 (Ubuntu)
       date:
-      - Thu, 11 Mar 2021 20:20:17 GMT
+      - Fri, 12 Mar 2021 06:50:49 GMT
       content-type:
       - application/json; charset=utf-8
       content-length:
-      - '150'
+      - '117'
       connection:
       - keep-alive
       x-powered-by:
@@ -31,7 +31,7 @@ http_interactions:
       access-control-allow-origin:
       - "*"
       x-numbers-api-number:
-      - '126'
+      - '35000'
       x-numbers-api-type:
       - trivia
       pragma:
@@ -41,17 +41,17 @@ http_interactions:
       expires:
       - '0'
       etag:
-      - W/"96-XGFVpD7ZysiyvMH6wHjZguPxNvM"
+      - W/"75-+2VUktLk0t4kyrpB9HnMmaySSqM"
       last-modified:
-      - '1615494017'
+      - '1615531849'
     body:
       encoding: UTF-8
       string: |-
         {
-         "text": "126 is the atomic number of unbihexium, an element that has not yet been discovered.",
-         "number": 126,
-         "found": true,
+         "text": "35000 is the number of genes in a human being.",
+         "number": "35000",
+         "found": false,
          "type": "trivia"
         }
-  recorded_at: Thu, 11 Mar 2021 20:18:48 GMT
+  recorded_at: Fri, 12 Mar 2021 06:49:21 GMT
 recorded_with: VCR 6.0.0

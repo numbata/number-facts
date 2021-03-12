@@ -19,7 +19,7 @@ http_interactions:
       server:
       - nginx/1.4.6 (Ubuntu)
       date:
-      - Thu, 11 Mar 2021 20:20:18 GMT
+      - Fri, 12 Mar 2021 06:50:51 GMT
       content-type:
       - text/html; charset=utf-8
       transfer-encoding:
@@ -47,5 +47,5 @@ http_interactions:
         <pre>Cannot GET /foo/trivia</pre>
         </body>
         </html>
-  recorded_at: Thu, 11 Mar 2021 20:18:50 GMT
+  recorded_at: Fri, 12 Mar 2021 06:49:22 GMT
 recorded_with: VCR 6.0.0

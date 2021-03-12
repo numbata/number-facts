@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://numbersapi.com/42/trivia
+    uri: http://numbersapi.com/random/trivia?max=10&min=1
     body:
       encoding: US-ASCII
       string: ''
@@ -19,11 +19,11 @@ http_interactions:
       server:
       - nginx/1.4.6 (Ubuntu)
       date:
-      - Thu, 11 Mar 2021 20:20:16 GMT
+      - Fri, 12 Mar 2021 06:50:48 GMT
       content-type:
       - application/json; charset=utf-8
       content-length:
-      - '115'
+      - '142'
       connection:
       - keep-alive
       x-powered-by:
@@ -31,7 +31,7 @@ http_interactions:
       access-control-allow-origin:
       - "*"
       x-numbers-api-number:
-      - '42'
+      - '7'
       x-numbers-api-type:
       - trivia
       pragma:
@@ -41,17 +41,17 @@ http_interactions:
       expires:
       - '0'
       etag:
-      - W/"73-Zw+OUy3HtuRIEpN504g/WCluXdg"
+      - W/"8e-os2fzq/n294LG1frPnDrAHnrA1M"
       last-modified:
-      - '1615494016'
+      - '1615531848'
     body:
       encoding: UTF-8
       string: |-
         {
-         "text": "42 is the number of US gallons in a barrel of oil.",
-         "number": 42,
+         "text": "7 is the number of types of viruses according to the Baltimore classification.",
+         "number": 7,
          "found": true,
          "type": "trivia"
         }
-  recorded_at: Thu, 11 Mar 2021 20:18:48 GMT
+  recorded_at: Fri, 12 Mar 2021 06:49:20 GMT
 recorded_with: VCR 6.0.0

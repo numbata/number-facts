@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://numbersapi.com/42/trivia?fragment=true
+    uri: http://numbersapi.com/35353/trivia?default=foo
     body:
       encoding: US-ASCII
       string: ''
@@ -19,11 +19,11 @@ http_interactions:
       server:
       - nginx/1.4.6 (Ubuntu)
       date:
-      - Thu, 11 Mar 2021 20:20:17 GMT
+      - Fri, 12 Mar 2021 06:50:50 GMT
       content-type:
       - application/json; charset=utf-8
       content-length:
-      - '103'
+      - '72'
       connection:
       - keep-alive
       x-powered-by:
@@ -31,7 +31,7 @@ http_interactions:
       access-control-allow-origin:
       - "*"
       x-numbers-api-number:
-      - '42'
+      - '35353'
       x-numbers-api-type:
       - trivia
       pragma:
@@ -41,17 +41,17 @@ http_interactions:
       expires:
       - '0'
       etag:
-      - W/"67-aD0wn8td5uA+SqKR/obtvA44vrc"
+      - W/"48-g6IkYStZuXdyfDSgNxEjSTS8WDM"
       last-modified:
-      - '1615494017'
+      - '1615531850'
     body:
       encoding: UTF-8
       string: |-
         {
-         "text": "the number of kilometers in a marathon",
-         "number": 42,
-         "found": true,
+         "text": "foo",
+         "number": 35353,
+         "found": false,
          "type": "trivia"
         }
-  recorded_at: Thu, 11 Mar 2021 20:18:49 GMT
+  recorded_at: Fri, 12 Mar 2021 06:49:21 GMT
 recorded_with: VCR 6.0.0

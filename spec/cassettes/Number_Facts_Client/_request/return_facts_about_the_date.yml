@@ -19,11 +19,11 @@ http_interactions:
       server:
       - nginx/1.4.6 (Ubuntu)
       date:
-      - Thu, 11 Mar 2021 21:02:10 GMT
+      - Fri, 12 Mar 2021 06:50:50 GMT
       content-type:
       - application/json; charset=utf-8
       content-length:
-      - '231'
+      - '188'
       connection:
       - keep-alive
       x-powered-by:
@@ -41,18 +41,12 @@ http_interactions:
       expires:
       - '0'
       etag:
-      - W/"e7-ejgdrQ9MexoY5q8fQt+C0xwpv9o"
+      - W/"bc-IPh94CfWjtox+p/5u8TwhjekF0w"
       last-modified:
-      - '1615496530'
+      - '1615531850'
     body:
-      encoding: UTF-8
-      string: |-
-        {
-         "text": "January 15th is the day in 1889 that the Coca-Cola Company, then known as the Pemberton Medicine Company, is originally incorporated in Atlanta, Georgia.",
-         "year": 1889,
-         "number": 15,
-         "found": true,
-         "type": "date"
-        }
-  recorded_at: Thu, 11 Mar 2021 21:00:41 GMT
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogInRleHQiOiAiSmFudWFyeSAxNXRoIGlzIHRoZSBkYXkgaW4gMTU4MiB0aGF0IFJ1c3NpYSBjZWRlcyBMaXZvbmlhIGFuZCBFc3RvbmlhIHRvIHRoZSBQb2xpc2jigJNMaXRodWFuaWFuIENvbW1vbndlYWx0aC4iLAogInllYXIiOiAxNTgyLAogIm51bWJlciI6IDE1LAogImZvdW5kIjogdHJ1ZSwKICJ0eXBlIjogImRhdGUiCn0=
+  recorded_at: Fri, 12 Mar 2021 06:49:22 GMT
 recorded_with: VCR 6.0.0

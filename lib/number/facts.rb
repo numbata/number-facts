@@ -2,14 +2,17 @@
 
 require 'number/facts/version'
 require 'number/facts/client'
+require 'number/facts/result'
+require 'number/facts/result_success'
+require 'number/facts/result_failure'
 
 module Number
   module Facts
     Error = Class.new(StandardError)
 
     class << self
-      def fetch(number = :random, **options)
-        client.request(**options.merge(number: number))
+      def request(**options)
+        client.request(**options)
       end
 
       private

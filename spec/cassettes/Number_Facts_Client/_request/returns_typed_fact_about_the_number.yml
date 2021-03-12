@@ -19,11 +19,11 @@ http_interactions:
       server:
       - nginx/1.4.6 (Ubuntu)
       date:
-      - Thu, 11 Mar 2021 20:20:18 GMT
+      - Fri, 12 Mar 2021 06:50:49 GMT
       content-type:
       - application/json; charset=utf-8
       content-length:
-      - '185'
+      - '95'
       connection:
       - keep-alive
       x-powered-by:
@@ -41,17 +41,17 @@ http_interactions:
       expires:
       - '0'
       etag:
-      - W/"b9-IWZp3mkw1JKqC4m69UDeENdDdD0"
+      - W/"5f-HkJy+7Q63aDan8RoEXLQvU+oUjE"
       last-modified:
-      - '1615494018'
+      - '1615531849'
     body:
       encoding: UTF-8
       string: |-
         {
-         "text": "42 is conjectured to be the scaling factor in the leading order term of the \"sixth moment of the Riemann zeta function\".",
+         "text": "42 is the 5^{th} Catalan number.",
          "number": 42,
          "found": true,
          "type": "math"
         }
-  recorded_at: Thu, 11 Mar 2021 20:18:49 GMT
+  recorded_at: Fri, 12 Mar 2021 06:49:21 GMT
 recorded_with: VCR 6.0.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://numbersapi.com/random/trivia?max=10&min=1
+    uri: http://numbersapi.com/random/trivia
     body:
       encoding: US-ASCII
       string: ''
@@ -19,11 +19,11 @@ http_interactions:
       server:
       - nginx/1.4.6 (Ubuntu)
       date:
-      - Thu, 11 Mar 2021 20:20:17 GMT
+      - Fri, 12 Mar 2021 06:50:48 GMT
       content-type:
       - application/json; charset=utf-8
       content-length:
-      - '99'
+      - '233'
       connection:
       - keep-alive
       x-powered-by:
@@ -31,7 +31,7 @@ http_interactions:
       access-control-allow-origin:
       - "*"
       x-numbers-api-number:
-      - '7'
+      - '227'
       x-numbers-api-type:
       - trivia
       pragma:
@@ -41,17 +41,17 @@ http_interactions:
       expires:
       - '0'
       etag:
-      - W/"63-w8K/mFH+cCnigGa0JsrQ8ebHLUw"
+      - W/"e9-qzu7aZ27iTKaP/9vkxsr6sl1UXw"
       last-modified:
-      - '1615494017'
+      - '1615531848'
     body:
       encoding: UTF-8
       string: |-
         {
-         "text": "7 is the figurative number of seas.",
-         "number": 7,
+         "text": "227 is the highest score ever in the Eurovision Song Contest, achieved by Katrina and the Waves of the UK in 1997, before the Semi-final system was introduced in 2004.",
+         "number": 227,
          "found": true,
          "type": "trivia"
         }
-  recorded_at: Thu, 11 Mar 2021 20:18:49 GMT
+  recorded_at: Fri, 12 Mar 2021 06:49:20 GMT
 recorded_with: VCR 6.0.0
