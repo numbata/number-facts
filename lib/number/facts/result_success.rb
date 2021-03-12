@@ -2,12 +2,10 @@
 
 module Number
   module Facts
-    class ResultSuccess < Result
+    class ResultSuccess
       attr_reader :fact
 
-      def initialize(fact)
-        super
-
+      def initialize(**fact)
         @fact = fact
         @success = true
 
@@ -45,6 +43,14 @@ module Number
 
       def to_json(*args)
         JSON.generate(fact, *args)
+      end
+
+      def success?
+        true
+      end
+
+      def failure?
+        !success?
       end
     end
   end

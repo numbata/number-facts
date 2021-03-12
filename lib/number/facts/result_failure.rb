@@ -2,18 +2,23 @@
 
 module Number
   module Facts
-    class ResultFailure < Result
+    class ResultFailure
       attr_reader :message
 
       def initialize(message: 'Unknown reason')
-        super
-
         @message = message
-        @success = false
       end
 
       def to_s
         message.to_s
+      end
+
+      def success?
+        false
+      end
+
+      def failure?
+        !success?
       end
     end
   end
