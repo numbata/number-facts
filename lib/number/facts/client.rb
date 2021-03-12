@@ -15,9 +15,11 @@ module Number
         @api_endpoint = options[:api_endpoint]
       end
 
-      def request(number: :random, type: :trivia, **options)
-        endpoint_path = "#{number}/#{type}"
-        response = connection.send(:get, endpoint_path, options)
+      def request(number: :random, type: :trivia, **input)
+        options = input.dup
+        options.delete(:fragment) unless options[:fragment]
+
+        response = connection.send(:get, "#{number}/#{type}", options)
 
         build_result(response)
       rescue ::Faraday::Error => e

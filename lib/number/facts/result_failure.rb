@@ -6,6 +6,8 @@ module Number
       attr_reader :message
 
       def initialize(message: 'Unknown reason')
+        super
+
         @message = message
         @success = false
       end

@@ -67,13 +67,13 @@ The `type` option is one of fact types `:trivia`, `:math`, `:date`, or `:year`. 
 
 ```ruby
 fact = client.request(number: 2010, type: :trivia)
-fact.text #
+fact.text # 2010 is a number for which we're missing a fact (submit one to numbersapi at google mail!).
 
 fact = client.request(number: 2010, type: :math)
-fact.text #
+fact.text # 2010 is the number of trees on 15 vertices with diameter 7.
 
 fact = client.request(number: 2010, type: :year)
-fact.text #
+fact.text # 2010 is the year that Kyrgyz President Kurmanbek Bakiyev flees Bishkek amid fierce rioting, sparking a sociopolitical crisis on April 7th.
 ```
 
 #### `fragment`
@@ -82,10 +82,10 @@ Is a boolean flag to return the fact as a sentence fragment where is the first w
 
 ```ruby
 fact = client.request(number: 42, fragment: false)
-fact.text #
+fact.text # 42 is the number of laws of cricket.
 
 fact =  client.request(number: 42, fragment: true)
-fact.text #
+fact.text # the number of US gallons in a barrel of oil
 ```
 
 #### `notfound`
@@ -94,16 +94,18 @@ fact.text #
 
 ```ruby
 fact = client.request(number: 35353, notfound: :default, default: 'so bored')
-fact.number #
-fact.text   #
+fact.number # 35353
+fact.text   # so border
 
 fact = client.request(number: 35353, notfound: :floor)
-fact.number #
-fact.text   #
+fact.number # 35000
+fact.text   # 35000 is the number of genes in a human being.
+fact.found  # false
 
 fact = client.request(number: 35353, notfound: :ceil)
-fact.number #
-fact.text   #
+fact.number # 43687
+fact.text   # 43687 is the number of toilet related accidents in the United States in 1996.
+fact.found  # false
 ```
 
 #### `default`
@@ -112,16 +114,18 @@ fact.text   #
 
 ```ruby
 fact = client.request(number: 35353)
-fact.text #
+fact.text  # 35353 is an uninteresting number.
+fact.found # false
 
 fact =  client.request(number: 35353, default: 'so bored')
-fact.text #
+fact.text  # so bored
+fact.found # false
 ```
 
 #### `min` and `max`
 
 ```ruby
 fact = client.request(min: 1, max: 3)
-fact.number #
-fact.text   #
+fact.number # 3
+fact.text   # 3 is the number of spatial dimensions we perceive our universe to have.
 ```

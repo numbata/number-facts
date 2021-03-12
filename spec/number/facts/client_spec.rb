@@ -60,7 +60,7 @@ RSpec.describe Number::Facts::Client, :vcr do
         .to include(type: :trivia, number: 35353, found: false, text: 'foo')
     end
 
-    it 'return facts about the date' do
+    it 'returns fact about the date' do
       result = client.request(number: '1/15', type: :date)
 
       expect(result).to be_success
@@ -68,7 +68,7 @@ RSpec.describe Number::Facts::Client, :vcr do
         .to include(:year, :text, number: 15, type: :date, found: true)
     end
 
-    it 'return facts about the year' do
+    it 'returns fact about the year' do
       result = client.request(number: 2010, type: :year)
 
       expect(result).to be_success
@@ -76,7 +76,7 @@ RSpec.describe Number::Facts::Client, :vcr do
         .to include(:text, :date, number: 2010, type: :year, found: true)
     end
 
-    it 'raises error with invalid number' do
+    it 'returns failuer result for invalid number' do
       expect(client.request(number: 'foo'))
         .to be_failure
     end

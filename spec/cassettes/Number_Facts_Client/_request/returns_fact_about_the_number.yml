@@ -19,11 +19,11 @@ http_interactions:
       server:
       - nginx/1.4.6 (Ubuntu)
       date:
-      - Fri, 12 Mar 2021 06:50:48 GMT
+      - Fri, 12 Mar 2021 17:01:36 GMT
       content-type:
       - application/json; charset=utf-8
       content-length:
-      - '171'
+      - '128'
       connection:
       - keep-alive
       x-powered-by:
@@ -41,17 +41,17 @@ http_interactions:
       expires:
       - '0'
       etag:
-      - W/"ab-T3bQKMiHTHNSPfaV3a1cT0BZNrc"
+      - W/"80-eEBWvIKBI8sDRZFofbJAva54KBk"
       last-modified:
-      - '1615531848'
+      - '1615568496'
     body:
       encoding: UTF-8
       string: |-
         {
-         "text": "42 is the sum of the codes of the letters in the words \"BIG BANG\" using the encoding A=1, B=2, C=3, etc.",
+         "text": "42 is the number of gallons that one barrel of petroleum holds.",
          "number": 42,
          "found": true,
          "type": "trivia"
         }
-  recorded_at: Fri, 12 Mar 2021 06:49:19 GMT
+  recorded_at: Fri, 12 Mar 2021 17:00:08 GMT
 recorded_with: VCR 6.0.0

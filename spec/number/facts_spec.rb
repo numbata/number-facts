@@ -5,9 +5,6 @@ RSpec.describe Number::Facts, :vcr do
     it 'returns fact about the number' do
       result = described_class.request(number: 42)
 
-      require 'pry'
-      binding.pry
-
       expect(result).to be_success
       expect(result.fact)
         .to include(:text, type: :trivia, number: 42, found: true)

@@ -6,6 +6,8 @@ module Number
       attr_reader :fact
 
       def initialize(fact)
+        super
+
         @fact = fact
         @success = true
 
@@ -33,7 +35,7 @@ module Number
         fact[:year]
       end
 
-      def year
+      def date
         fact[:date]
       end
 
@@ -41,8 +43,8 @@ module Number
         fact.to_s
       end
 
-      def to_json
-        fact.to_json
+      def to_json(*args)
+        JSON.generate(fact, *args)
       end
     end
   end

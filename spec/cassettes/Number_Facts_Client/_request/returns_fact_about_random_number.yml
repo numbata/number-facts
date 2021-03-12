@@ -19,11 +19,11 @@ http_interactions:
       server:
       - nginx/1.4.6 (Ubuntu)
       date:
-      - Fri, 12 Mar 2021 06:50:48 GMT
+      - Fri, 12 Mar 2021 17:01:37 GMT
       content-type:
       - application/json; charset=utf-8
       content-length:
-      - '233'
+      - '169'
       connection:
       - keep-alive
       x-powered-by:
@@ -31,7 +31,7 @@ http_interactions:
       access-control-allow-origin:
       - "*"
       x-numbers-api-number:
-      - '227'
+      - '383'
       x-numbers-api-type:
       - trivia
       pragma:
@@ -41,17 +41,17 @@ http_interactions:
       expires:
       - '0'
       etag:
-      - W/"e9-qzu7aZ27iTKaP/9vkxsr6sl1UXw"
+      - W/"a9-DFg8lO51hR87yKpM+C+Ed9t66sk"
       last-modified:
-      - '1615531848'
+      - '1615568497'
     body:
       encoding: UTF-8
       string: |-
         {
-         "text": "227 is the highest score ever in the Eurovision Song Contest, achieved by Katrina and the Waves of the UK in 1997, before the Semi-final system was introduced in 2004.",
-         "number": 227,
+         "text": "383 is the cubic displacement in inches of a 350cid Small Block Chevrolet with a 400cid SBC crankshaft.",
+         "number": 383,
          "found": true,
          "type": "trivia"
         }
-  recorded_at: Fri, 12 Mar 2021 06:49:20 GMT
+  recorded_at: Fri, 12 Mar 2021 17:00:08 GMT
 recorded_with: VCR 6.0.0

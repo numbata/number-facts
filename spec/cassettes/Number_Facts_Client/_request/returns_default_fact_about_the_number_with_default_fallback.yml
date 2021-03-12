@@ -19,7 +19,7 @@ http_interactions:
       server:
       - nginx/1.4.6 (Ubuntu)
       date:
-      - Fri, 12 Mar 2021 06:50:50 GMT
+      - Fri, 12 Mar 2021 17:01:38 GMT
       content-type:
       - application/json; charset=utf-8
       content-length:
@@ -43,7 +43,7 @@ http_interactions:
       etag:
       - W/"48-g6IkYStZuXdyfDSgNxEjSTS8WDM"
       last-modified:
-      - '1615531850'
+      - '1615568498'
     body:
       encoding: UTF-8
       string: |-
@@ -53,5 +53,5 @@ http_interactions:
          "found": false,
          "type": "trivia"
         }
-  recorded_at: Fri, 12 Mar 2021 06:49:21 GMT
+  recorded_at: Fri, 12 Mar 2021 17:00:10 GMT
 recorded_with: VCR 6.0.0

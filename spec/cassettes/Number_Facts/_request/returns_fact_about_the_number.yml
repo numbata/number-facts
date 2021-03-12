@@ -19,11 +19,11 @@ http_interactions:
       server:
       - nginx/1.4.6 (Ubuntu)
       date:
-      - Fri, 12 Mar 2021 06:50:51 GMT
+      - Fri, 12 Mar 2021 17:01:39 GMT
       content-type:
       - application/json; charset=utf-8
       content-length:
-      - '234'
+      - '174'
       connection:
       - keep-alive
       x-powered-by:
@@ -41,17 +41,17 @@ http_interactions:
       expires:
       - '0'
       etag:
-      - W/"ea-HAerqvkK1Eo3fOVIlp5n5q4Scpc"
+      - W/"ae-vjVLDMj00qQx78ZcLf7GndMa48M"
       last-modified:
-      - '1615531851'
+      - '1615568499'
     body:
       encoding: UTF-8
       string: |-
         {
-         "text": "42 is the result given by the web search engines Google, Wolfram Alpha and Bing when the query \"the answer to life the universe and everything\" is entered as a search.",
+         "text": "42 is the number of museums in Amsterdam (Netherlands has the highest concentration of museums in the world).",
          "number": 42,
          "found": true,
          "type": "trivia"
         }
-  recorded_at: Fri, 12 Mar 2021 06:49:23 GMT
+  recorded_at: Fri, 12 Mar 2021 17:00:11 GMT
 recorded_with: VCR 6.0.0

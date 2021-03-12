@@ -19,11 +19,11 @@ http_interactions:
       server:
       - nginx/1.4.6 (Ubuntu)
       date:
-      - Fri, 12 Mar 2021 06:50:50 GMT
+      - Fri, 12 Mar 2021 17:01:38 GMT
       content-type:
       - application/json; charset=utf-8
       content-length:
-      - '188'
+      - '234'
       connection:
       - keep-alive
       x-powered-by:
@@ -41,12 +41,18 @@ http_interactions:
       expires:
       - '0'
       etag:
-      - W/"bc-IPh94CfWjtox+p/5u8TwhjekF0w"
+      - W/"ea-+3Sv/msjTPP04ce6D/sbU0aT+kw"
       last-modified:
-      - '1615531850'
+      - '1615568498'
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        ewogInRleHQiOiAiSmFudWFyeSAxNXRoIGlzIHRoZSBkYXkgaW4gMTU4MiB0aGF0IFJ1c3NpYSBjZWRlcyBMaXZvbmlhIGFuZCBFc3RvbmlhIHRvIHRoZSBQb2xpc2jigJNMaXRodWFuaWFuIENvbW1vbndlYWx0aC4iLAogInllYXIiOiAxNTgyLAogIm51bWJlciI6IDE1LAogImZvdW5kIjogdHJ1ZSwKICJ0eXBlIjogImRhdGUiCn0=
-  recorded_at: Fri, 12 Mar 2021 06:49:22 GMT
+      encoding: UTF-8
+      string: |-
+        {
+         "text": "January 15th is the day in 1993 that Salvatore Riina, the Mafia boss known as \"The Beast\", is arrested in Sicily, Italy after three decades as a fugitive.",
+         "year": 1993,
+         "number": 15,
+         "found": true,
+         "type": "date"
+        }
+  recorded_at: Fri, 12 Mar 2021 17:00:10 GMT
 recorded_with: VCR 6.0.0

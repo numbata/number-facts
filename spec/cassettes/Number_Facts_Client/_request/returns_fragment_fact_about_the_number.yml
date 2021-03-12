@@ -19,11 +19,11 @@ http_interactions:
       server:
       - nginx/1.4.6 (Ubuntu)
       date:
-      - Fri, 12 Mar 2021 06:50:49 GMT
+      - Fri, 12 Mar 2021 17:01:37 GMT
       content-type:
       - application/json; charset=utf-8
       content-length:
-      - '94'
+      - '164'
       connection:
       - keep-alive
       x-powered-by:
@@ -41,17 +41,17 @@ http_interactions:
       expires:
       - '0'
       etag:
-      - W/"5e-T7/CPmvoS+r51ZUbmd9qLJmH/Uc"
+      - W/"a4-HYOjGFi75uXRi+Bu6/qVbv5HF5M"
       last-modified:
-      - '1615531849'
+      - '1615568497'
     body:
       encoding: UTF-8
       string: |-
         {
-         "text": "the number of laws of cricket",
+         "text": "the sum of the codes of the letters in the words \"BIG BANG\" using the encoding A=1, B=2, C=3, etc",
          "number": 42,
          "found": true,
          "type": "trivia"
         }
-  recorded_at: Fri, 12 Mar 2021 06:49:20 GMT
+  recorded_at: Fri, 12 Mar 2021 17:00:09 GMT
 recorded_with: VCR 6.0.0

@@ -19,11 +19,11 @@ http_interactions:
       server:
       - nginx/1.4.6 (Ubuntu)
       date:
-      - Fri, 12 Mar 2021 06:50:48 GMT
+      - Fri, 12 Mar 2021 17:01:37 GMT
       content-type:
       - application/json; charset=utf-8
       content-length:
-      - '142'
+      - '134'
       connection:
       - keep-alive
       x-powered-by:
@@ -31,7 +31,7 @@ http_interactions:
       access-control-allow-origin:
       - "*"
       x-numbers-api-number:
-      - '7'
+      - '9'
       x-numbers-api-type:
       - trivia
       pragma:
@@ -41,17 +41,17 @@ http_interactions:
       expires:
       - '0'
       etag:
-      - W/"8e-os2fzq/n294LG1frPnDrAHnrA1M"
+      - W/"86-TogUPAGTs3bq+2brYoS7sCtjTCE"
       last-modified:
-      - '1615531848'
+      - '1615568497'
     body:
       encoding: UTF-8
       string: |-
         {
-         "text": "7 is the number of types of viruses according to the Baltimore classification.",
-         "number": 7,
+         "text": "9 is the number of innings in a regulation, non-tied game of baseball.",
+         "number": 9,
          "found": true,
          "type": "trivia"
         }
-  recorded_at: Fri, 12 Mar 2021 06:49:20 GMT
+  recorded_at: Fri, 12 Mar 2021 17:00:08 GMT
 recorded_with: VCR 6.0.0
