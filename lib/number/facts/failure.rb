@@ -2,7 +2,7 @@
 
 module Number
   module Facts
-    class ResultFailure
+    class Failure
       attr_reader :message
 
       def initialize(message: 'Unknown reason')

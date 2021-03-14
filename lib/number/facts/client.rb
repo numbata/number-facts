@@ -29,14 +29,14 @@ module Number
       private
 
       def build_result(response)
-        return Number::Facts::ResultFailure.new(message: :fact_not_found) unless response.success?
+        return Number::Facts::Failure.new(message: :fact_not_found) unless response.success?
 
         json = response.body
         result = json
           .slice(:text, :found, :date, :year)
           .merge(type: json[:type].to_sym, number: json[:number].to_i)
 
-        Number::Facts::ResultSuccess.new(**result)
+        Number::Facts::Result.new(**result)
       end
 
       def connection

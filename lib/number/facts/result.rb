@@ -2,7 +2,7 @@
 
 module Number
   module Facts
-    class ResultSuccess
+    class Result
       attr_reader :fact
 
       def initialize(**fact)

@@ -2,8 +2,8 @@
 
 require 'number/facts/version'
 require 'number/facts/client'
-require 'number/facts/result_success'
-require 'number/facts/result_failure'
+require 'number/facts/result'
+require 'number/facts/failure'
 
 module Number
   module Facts
